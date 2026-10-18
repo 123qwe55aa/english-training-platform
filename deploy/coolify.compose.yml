@@ -32,7 +32,7 @@ services:
     restart: unless-stopped
     depends_on: [app]
     ports:
-      - '127.0.0.1:8080:8080'
+      - '127.0.0.1:8081:8080'
     volumes:
       - english-platform-data:/data:ro
       - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
