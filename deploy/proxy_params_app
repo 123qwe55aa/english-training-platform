@@ -1,0 +1,6 @@
+proxy_set_header Host $host;
+proxy_set_header X-Real-IP $http_x_real_ip;
+proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto;
+proxy_read_timeout 300s;
+proxy_send_timeout 300s;
+proxy_request_buffering off;

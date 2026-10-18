@@ -1,0 +1,4 @@
+Django==5.2.18
+gunicorn==26.2.0
+beautifulsoup4==4.14.3
+pypdf==6.21.1

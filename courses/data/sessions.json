@@ -1,0 +1,430 @@
+[
+  {
+    "number": 1,
+    "title": "认识彼此，从 Hello 开始",
+    "subtitle": "Nice to meet you!",
+    "date": null,
+    "status": "prepared",
+    "goal": "与新同事交换问候和姓名，回答“来自哪里”，并说 `Nice to meet you.` 完成简短初次见面对话。",
+    "review_sentences": "",
+    "expressions": [
+      {
+        "en": "Hello.",
+        "zh": "你好。"
+      },
+      {
+        "en": "My name is Alex.",
+        "zh": "我的名字是 Alex。"
+      },
+      {
+        "en": "Where are you from?",
+        "zh": "你来自哪里？"
+      },
+      {
+        "en": "I'm from China.",
+        "zh": "我来自辽宁。"
+      }
+    ],
+    "activities": [
+      {
+        "title": "前一天知识点回顾",
+        "minutes": "5",
+        "instruction": "从上节课实际教过的句子中精选 5–6 句。先自己试说，再看句卡；老师问，你来回答。第一天从 Hello 和自我介绍开始。",
+        "prompt": "回顾句是候选材料，老师课前按实际授课内容替换。先留一点回想时间，再给关键词。",
+        "task": "选一句你最熟悉的话，说给老师听。"
+      },
+      {
+        "title": "VOA Lesson 1 · 听懂一句",
+        "minutes": "15",
+        "instruction": "先看对应课号的 30–60 秒片段。指图或选择意思，再听一句、跟一句，换成自己的信息。",
+        "prompt": "听不清时只重放目标句。需要时先看图片或关键词，再听老师示范。",
+        "task": "Hello."
+      },
+      {
+        "title": "VOA Lesson 2 · 换你来说",
+        "minutes": "15",
+        "instruction": "先听老师示范，再用句卡说一次。第二轮只看关键词，第三轮换一个人、地点或物品。",
+        "prompt": "一次只换一项信息；需要完整示范时，可以一起说完，再独立试一次。",
+        "task": "I'm from China."
+      },
+      {
+        "title": "一起演一段真实对话",
+        "minutes": "20",
+        "instruction": "把“认识彼此，从 Hello 开始”放进一个日常或职场情景。老师先带一轮，再由你来问或回答。先用完整句卡，再尝试撤去一个提示。",
+        "prompt": "如果两项任务太难，分成两段；让意思先传达到对方。",
+        "task": "用今天学的一两句，完成一次有来有回的小对话。"
+      },
+      {
+        "title": "说说今天的小收获",
+        "minutes": "5",
+        "instruction": "选一句最有把握的话，不看完整句卡说一次。再告诉老师，哪一句还想继续练。",
+        "prompt": "状态疲劳时，就用最熟悉的一句收尾。",
+        "task": "今天我能说……；下次我想再练……。"
+      }
+    ],
+    "b_plan": "把任务缩成两张图片、两个选项。先指图，再听老师示范，再一起说，最后自己尝试一句。一次只换一项信息，保留一个成功输出。视频打不开时用老师朗读和句卡继续。",
+    "exit_check": "收起完整句卡，选出今天最有把握的一句，说给老师听。记录独立完成、提示后完成或下次再练；选出下次开头要回顾的句子。",
+    "urls": [
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-one/3111026.html",
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-2-hello/3113733.html"
+    ]
+  },
+  {
+    "number": 2,
+    "title": "打个电话，认认身边的物品",
+    "subtitle": "A call & everyday things",
+    "date": null,
+    "status": "prepared",
+    "goal": "用一句话说明打电话的人是谁；询问对方有没有一种常见物品，并用 `I have ...` 或 `I don't have ...` 回答。",
+    "review_sentences": "Hello.\nMy name is Alex.\nWhat's your name?\nNice to meet you.\nWhere are you from?\nI'm from China.",
+    "expressions": [
+      {
+        "en": "Hello.",
+        "zh": "你好。"
+      },
+      {
+        "en": "My name is Alex.",
+        "zh": "我的名字是 Alex。"
+      },
+      {
+        "en": "Where are you from?",
+        "zh": "你来自哪里？"
+      },
+      {
+        "en": "I'm from China.",
+        "zh": "我来自辽宁。"
+      }
+    ],
+    "activities": [
+      {
+        "title": "前一天知识点回顾",
+        "minutes": "5",
+        "instruction": "从上节课实际教过的句子中精选 5–6 句。先自己试说，再看句卡；老师问，你来回答。第一天从 Hello 和自我介绍开始。",
+        "prompt": "回顾句是候选材料，老师课前按实际授课内容替换。先留一点回想时间，再给关键词。",
+        "task": "选一句你最熟悉的话，说给老师听。"
+      },
+      {
+        "title": "VOA Lesson 3 · 听懂一句",
+        "minutes": "15",
+        "instruction": "先看对应课号的 30–60 秒片段。指图或选择意思，再听一句、跟一句，换成自己的信息。",
+        "prompt": "听不清时只重放目标句。需要时先看图片或关键词，再听老师示范。",
+        "task": "Hello."
+      },
+      {
+        "title": "VOA Lesson 4 · 换你来说",
+        "minutes": "15",
+        "instruction": "先听老师示范，再用句卡说一次。第二轮只看关键词，第三轮换一个人、地点或物品。",
+        "prompt": "一次只换一项信息；需要完整示范时，可以一起说完，再独立试一次。",
+        "task": "I'm from China."
+      },
+      {
+        "title": "一起演一段真实对话",
+        "minutes": "20",
+        "instruction": "把“打个电话，认认身边的物品”放进一个日常或职场情景。老师先带一轮，再由你来问或回答。先用完整句卡，再尝试撤去一个提示。",
+        "prompt": "如果两项任务太难，分成两段；让意思先传达到对方。",
+        "task": "用今天学的一两句，完成一次有来有回的小对话。"
+      },
+      {
+        "title": "说说今天的小收获",
+        "minutes": "5",
+        "instruction": "选一句最有把握的话，不看完整句卡说一次。再告诉老师，哪一句还想继续练。",
+        "prompt": "状态疲劳时，就用最熟悉的一句收尾。",
+        "task": "今天我能说……；下次我想再练……。"
+      }
+    ],
+    "b_plan": "把任务缩成两张图片、两个选项。先指图，再听老师示范，再一起说，最后自己尝试一句。一次只换一项信息，保留一个成功输出。视频打不开时用老师朗读和句卡继续。",
+    "exit_check": "收起完整句卡，选出今天最有把握的一句，说给老师听。记录独立完成、提示后完成或下次再练；选出下次开头要回顾的句子。",
+    "urls": [
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-3-i-am-here/3126527.html",
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-4/3168920.html"
+    ]
+  },
+  {
+    "number": 3,
+    "title": "你在哪里？一起找找路",
+    "subtitle": "Places & directions",
+    "date": null,
+    "status": "prepared",
+    "goal": "说明自己在某房间，并向同事询问一个办公地点的位置，听懂并跟随一个简单方向提示。",
+    "review_sentences": "Hello. May I speak to Anna?\nIs Anna there?\nWhat is it?\nIt's a book.\nIs this your bag?\nYes, it is.",
+    "expressions": [
+      {
+        "en": "Where are you? / I'm in the kitchen.",
+        "zh": "你在哪儿？——我在厨房。"
+      },
+      {
+        "en": "Where is the gym?",
+        "zh": "健身房在哪里？"
+      },
+      {
+        "en": "The gym is across from the lounge.",
+        "zh": "健身房在休息室对面。"
+      },
+      {
+        "en": "It's next to the mailroom. / It is behind the lobby.",
+        "zh": "它在邮件室旁边。／它在大厅后面。"
+      }
+    ],
+    "activities": [
+      {
+        "title": "前一天知识点回顾",
+        "minutes": "5",
+        "instruction": "从上节课实际教过的句子中精选 5–6 句。先自己试说，再看句卡；老师问，你来回答。第一天从 Hello 和自我介绍开始。",
+        "prompt": "回顾句是候选材料，老师课前按实际授课内容替换。先留一点回想时间，再给关键词。",
+        "task": "选一句你最熟悉的话，说给老师听。"
+      },
+      {
+        "title": "VOA Lesson 5 · 听懂一句",
+        "minutes": "15",
+        "instruction": "先看对应课号的 30–60 秒片段。指图或选择意思，再听一句、跟一句，换成自己的信息。",
+        "prompt": "听不清时只重放目标句。需要时先看图片或关键词，再听老师示范。",
+        "task": "Where are you? / I'm in the kitchen."
+      },
+      {
+        "title": "VOA Lesson 6 · 换你来说",
+        "minutes": "15",
+        "instruction": "先听老师示范，再用句卡说一次。第二轮只看关键词，第三轮换一个人、地点或物品。",
+        "prompt": "一次只换一项信息；需要完整示范时，可以一起说完，再独立试一次。",
+        "task": "It's next to the mailroom. / It is behind the lobby."
+      },
+      {
+        "title": "一起演一段真实对话",
+        "minutes": "20",
+        "instruction": "把“你在哪里？一起找找路”放进一个日常或职场情景。老师先带一轮，再由你来问或回答。先用完整句卡，再尝试撤去一个提示。",
+        "prompt": "如果两项任务太难，分成两段；让意思先传达到对方。",
+        "task": "用今天学的一两句，完成一次有来有回的小对话。"
+      },
+      {
+        "title": "说说今天的小收获",
+        "minutes": "5",
+        "instruction": "选一句最有把握的话，不看完整句卡说一次。再告诉老师，哪一句还想继续练。",
+        "prompt": "状态疲劳时，就用最熟悉的一句收尾。",
+        "task": "今天我能说……；下次我想再练……。"
+      }
+    ],
+    "b_plan": "把任务缩成两张图片、两个选项。先指图，再听老师示范，再一起说，最后自己尝试一句。一次只换一项信息，保留一个成功输出。视频打不开时用老师朗读和句卡继续。",
+    "exit_check": "收起完整句卡，选出今天最有把握的一句，说给老师听。记录独立完成、提示后完成或下次再练；选出下次开头要回顾的句子。",
+    "urls": [
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-5-where-are-you/3168971.html",
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-6-where-is-the-gym/3225958.html"
+    ]
+  },
+  {
+    "number": 4,
+    "title": "现在在做什么？",
+    "subtitle": "What are you doing?",
+    "date": null,
+    "status": "prepared",
+    "goal": "礼貌问同事 `Are you busy?`，并问 `What are you doing?`；听到 `I'm writing.` 等回答后能做出合适回应。",
+    "review_sentences": "Where are you?\nI'm in the kitchen.\nWhere is the gym?\nIt's across from the library.\nWhere is the library?\nIt's on the first floor.",
+    "expressions": [
+      {
+        "en": "What are you doing?",
+        "zh": "你正在做什么？"
+      },
+      {
+        "en": "I'm writing.",
+        "zh": "我正在写东西。"
+      },
+      {
+        "en": "Are you busy?",
+        "zh": "你忙吗？"
+      },
+      {
+        "en": "Yes, I am. / No, I'm not.",
+        "zh": "是的，我忙。／不，我不忙。"
+      },
+      {
+        "en": "I'm a little busy. / Maybe I'll see you later.",
+        "zh": "我有点忙。／也许晚点见。"
+      }
+    ],
+    "activities": [
+      {
+        "title": "前一天知识点回顾",
+        "minutes": "5",
+        "instruction": "从上节课实际教过的句子中精选 5–6 句。先自己试说，再看句卡；老师问，你来回答。第一天从 Hello 和自我介绍开始。",
+        "prompt": "回顾句是候选材料，老师课前按实际授课内容替换。先留一点回想时间，再给关键词。",
+        "task": "选一句你最熟悉的话，说给老师听。"
+      },
+      {
+        "title": "VOA Lesson 7 · 听懂一句",
+        "minutes": "15",
+        "instruction": "先看对应课号的 30–60 秒片段。指图或选择意思，再听一句、跟一句，换成自己的信息。",
+        "prompt": "听不清时只重放目标句。需要时先看图片或关键词，再听老师示范。",
+        "task": "What are you doing?"
+      },
+      {
+        "title": "VOA Lesson 8 · 换你来说",
+        "minutes": "15",
+        "instruction": "先听老师示范，再用句卡说一次。第二轮只看关键词，第三轮换一个人、地点或物品。",
+        "prompt": "一次只换一项信息；需要完整示范时，可以一起说完，再独立试一次。",
+        "task": "I'm a little busy. / Maybe I'll see you later."
+      },
+      {
+        "title": "一起演一段真实对话",
+        "minutes": "20",
+        "instruction": "把“现在在做什么？”放进一个日常或职场情景。老师先带一轮，再由你来问或回答。先用完整句卡，再尝试撤去一个提示。",
+        "prompt": "如果两项任务太难，分成两段；让意思先传达到对方。",
+        "task": "用今天学的一两句，完成一次有来有回的小对话。"
+      },
+      {
+        "title": "说说今天的小收获",
+        "minutes": "5",
+        "instruction": "选一句最有把握的话，不看完整句卡说一次。再告诉老师，哪一句还想继续练。",
+        "prompt": "状态疲劳时，就用最熟悉的一句收尾。",
+        "task": "今天我能说……；下次我想再练……。"
+      }
+    ],
+    "b_plan": "把任务缩成两张图片、两个选项。先指图，再听老师示范，再一起说，最后自己尝试一句。一次只换一项信息，保留一个成功输出。视频打不开时用老师朗读和句卡继续。",
+    "exit_check": "收起完整句卡，选出今天最有把握的一句，说给老师听。记录独立完成、提示后完成或下次再练；选出下次开头要回顾的句子。",
+    "urls": [
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-7-what-are-you-doing/3240468.html",
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-8-are-you-busy/3253185.html"
+    ]
+  },
+  {
+    "number": 5,
+    "title": "聊聊天气，指个方向",
+    "subtitle": "Weather & finding the way",
+    "date": null,
+    "status": "prepared",
+    "goal": "用一个天气问句和简短回答开启对话，并在地图上给访客一个简单方向提示。",
+    "review_sentences": "What are you doing?\nI'm cooking.\nAre you busy?\nYes, I am.\nExcuse me.\nNo, I'm not.",
+    "expressions": [
+      {
+        "en": "Is it cold? / Yes, it is. / No, it isn't.",
+        "zh": "冷吗？——是的／不冷。"
+      },
+      {
+        "en": "Turn right. / Turn left.",
+        "zh": "向右／左转。"
+      },
+      {
+        "en": "Go straight ahead.",
+        "zh": "一直往前走。"
+      },
+      {
+        "en": "Then walk straight ahead. / It's near the coffee shop.",
+        "zh": "然后直走。／它在咖啡店附近。"
+      }
+    ],
+    "activities": [
+      {
+        "title": "前一天知识点回顾",
+        "minutes": "5",
+        "instruction": "从上节课实际教过的句子中精选 5–6 句。先自己试说，再看句卡；老师问，你来回答。第一天从 Hello 和自我介绍开始。",
+        "prompt": "回顾句是候选材料，老师课前按实际授课内容替换。先留一点回想时间，再给关键词。",
+        "task": "选一句你最熟悉的话，说给老师听。"
+      },
+      {
+        "title": "VOA Lesson 9 · 听懂一句",
+        "minutes": "15",
+        "instruction": "先看对应课号的 30–60 秒片段。指图或选择意思，再听一句、跟一句，换成自己的信息。",
+        "prompt": "听不清时只重放目标句。需要时先看图片或关键词，再听老师示范。",
+        "task": "Is it cold? / Yes, it is. / No, it isn't."
+      },
+      {
+        "title": "VOA Lesson 10 · 换你来说",
+        "minutes": "15",
+        "instruction": "先听老师示范，再用句卡说一次。第二轮只看关键词，第三轮换一个人、地点或物品。",
+        "prompt": "一次只换一项信息；需要完整示范时，可以一起说完，再独立试一次。",
+        "task": "Then walk straight ahead. / It's near the coffee shop."
+      },
+      {
+        "title": "一起演一段真实对话",
+        "minutes": "20",
+        "instruction": "把“聊聊天气，指个方向”放进一个日常或职场情景。老师先带一轮，再由你来问或回答。先用完整句卡，再尝试撤去一个提示。",
+        "prompt": "如果两项任务太难，分成两段；让意思先传达到对方。",
+        "task": "用今天学的一两句，完成一次有来有回的小对话。"
+      },
+      {
+        "title": "说说今天的小收获",
+        "minutes": "5",
+        "instruction": "选一句最有把握的话，不看完整句卡说一次。再告诉老师，哪一句还想继续练。",
+        "prompt": "状态疲劳时，就用最熟悉的一句收尾。",
+        "task": "今天我能说……；下次我想再练……。"
+      }
+    ],
+    "b_plan": "把任务缩成两张图片、两个选项。先指图，再听老师示范，再一起说，最后自己尝试一句。一次只换一项信息，保留一个成功输出。视频打不开时用老师朗读和句卡继续。",
+    "exit_check": "收起完整句卡，选出今天最有把握的一句，说给老师听。记录独立完成、提示后完成或下次再练；选出下次开头要回顾的句子。",
+    "urls": [
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-9-is-it-cold/3261789.html",
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-10/3285228.html"
+    ]
+  },
+  {
+    "number": 6,
+    "title": "认识社区，介绍家人",
+    "subtitle": "My neighborhood & my family",
+    "date": null,
+    "status": "prepared",
+    "goal": "用简单句问一个附近地点并听懂／说出一个位置或方向；再用 `This is my ...` 介绍一位家人或人物卡。",
+    "review_sentences": "Is it cold?\nYes, it is.\nNo, it isn't.\nTurn right.\nTurn left.\nGo straight ahead.",
+    "expressions": [
+      {
+        "en": "Where is the library?",
+        "zh": "图书馆在哪里？"
+      },
+      {
+        "en": "Is there a bank near here?",
+        "zh": "这附近有银行吗？"
+      },
+      {
+        "en": "There is a bank behind you.",
+        "zh": "你后面有一家银行。"
+      },
+      {
+        "en": "This is my mother/father.",
+        "zh": "这是我妈妈／爸爸。"
+      },
+      {
+        "en": "Who is that woman?",
+        "zh": "那位女士是谁？"
+      }
+    ],
+    "activities": [
+      {
+        "title": "前一天知识点回顾",
+        "minutes": "5",
+        "instruction": "从上节课实际教过的句子中精选 5–6 句。先自己试说，再看句卡；老师问，你来回答。第一天从 Hello 和自我介绍开始。",
+        "prompt": "回顾句是候选材料，老师课前按实际授课内容替换。先留一点回想时间，再给关键词。",
+        "task": "选一句你最熟悉的话，说给老师听。"
+      },
+      {
+        "title": "VOA Lesson 11 · 听懂一句",
+        "minutes": "15",
+        "instruction": "先看对应课号的 30–60 秒片段。指图或选择意思，再听一句、跟一句，换成自己的信息。",
+        "prompt": "听不清时只重放目标句。需要时先看图片或关键词，再听老师示范。",
+        "task": "Where is the library?"
+      },
+      {
+        "title": "VOA Lesson 12 · 换你来说",
+        "minutes": "15",
+        "instruction": "先听老师示范，再用句卡说一次。第二轮只看关键词，第三轮换一个人、地点或物品。",
+        "prompt": "一次只换一项信息；需要完整示范时，可以一起说完，再独立试一次。",
+        "task": "Who is that woman?"
+      },
+      {
+        "title": "一起演一段真实对话",
+        "minutes": "20",
+        "instruction": "把“认识社区，介绍家人”放进一个日常或职场情景。老师先带一轮，再由你来问或回答。先用完整句卡，再尝试撤去一个提示。",
+        "prompt": "如果两项任务太难，分成两段；让意思先传达到对方。",
+        "task": "用今天学的一两句，完成一次有来有回的小对话。"
+      },
+      {
+        "title": "说说今天的小收获",
+        "minutes": "5",
+        "instruction": "选一句最有把握的话，不看完整句卡说一次。再告诉老师，哪一句还想继续练。",
+        "prompt": "状态疲劳时，就用最熟悉的一句收尾。",
+        "task": "今天我能说……；下次我想再练……。"
+      }
+    ],
+    "b_plan": "把任务缩成两张图片、两个选项。先指图，再听老师示范，再一起说，最后自己尝试一句。一次只换一项信息，保留一个成功输出。视频打不开时用老师朗读和句卡继续。",
+    "exit_check": "收起完整句卡，选出今天最有把握的一句，说给老师听。记录独立完成、提示后完成或下次再练；选出下次开头要回顾的句子。",
+    "urls": [
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-11-this-is-my-neighborhood/3293986.html",
+      "https://learningenglish.voanews.com/a/lets-learn-english-lesson-12-meet-my-family/3301733.html"
+    ]
+  }
+]
