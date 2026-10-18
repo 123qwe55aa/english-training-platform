@@ -12,7 +12,7 @@ services:
       MEDIA_ROOT: /data/media
       STATIC_ROOT: /data/static
     volumes:
-      - ${ENGLISH_PLATFORM_STORAGE:?Set ENGLISH_PLATFORM_STORAGE on the target server}:/data
+      - english-platform-data:/data
     healthcheck:
       test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/')"]
       interval: 30s
@@ -27,6 +27,11 @@ services:
     ports:
       - '127.0.0.1:8080:8080'
     volumes:
-      - ${ENGLISH_PLATFORM_STORAGE:?Set ENGLISH_PLATFORM_STORAGE on the target server}:/data:ro
+      - english-platform-data:/data:ro
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - ./proxy_params_app:/etc/nginx/proxy_params_app:ro
+
+volumes:
+  english-platform-data:
+    external: true
+    name: english-platform-data
