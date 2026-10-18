@@ -1,0 +1,11 @@
+.git
+.venv
+.env
+.secrets
+.superpowers
+media
+staticfiles
+*.sqlite3
+backups
+
+storage

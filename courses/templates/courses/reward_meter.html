@@ -1,0 +1,12 @@
+{% load static %}
+<section class="learner-dock" data-learner-meter data-level="low" aria-label="今日 {{ student.reward_name }}">
+  <svg class="learner-buddy" aria-hidden="true"><use href="{% static 'courses/characters.svg' %}#golden"/></svg>
+  <div class="learner-heading"><span class="learner-eyebrow">EVERY LITTLE WIN</span><h2>{{ student.reward_name }} <span class="learner-spark" aria-hidden="true">✦</span></h2><span class="learner-device">此设备 · 今日 · 北京时间</span></div>
+  <div class="learner-energy"><div class="learner-energy-heading"><span data-learner-label>能量不足，先来一个小任务</span><strong><b data-learner-points>0</b><span> / <span data-learner-goal>{{ student.daily_goal }}</span></span></strong></div>
+    <div class="learner-track" role="progressbar" aria-label="今日 {{ student.reward_name }}，目标 {{ student.daily_goal }}" aria-valuemin="0" aria-valuemax="{{ student.daily_goal }}" aria-valuenow="0" data-learner-progress><div class="learner-fill"></div><i class="learner-tick tick-20"></i><i class="learner-tick tick-50"></i><span class="learner-particles" aria-hidden="true">✦ · ✧ · ✦</span></div>
+    <div class="learner-scale" aria-hidden="true"><span>0</span><span>{{ student.low_threshold }} · 起步</span><span>{{ reward_config.halfGoal|floatformat:"-1" }} · 半格</span><span>{{ student.daily_goal }} · 今日目标</span></div>
+  </div>
+  <small data-learner-teacher-points class="learner-award-breakdown"></small><details class="learner-rules"><summary aria-label="{{ student.reward_name }}奖励规则">?</summary><div><strong>每次努力，都有回响。</strong><p>看完一个视频 +{{ student.video_points }}；完成一轮对话 +{{ student.dialogue_points }}。跳到结尾不计奖励，同一任务每天奖励一次。每天北京时间 00:00 重新累计。</p><p>任务奖励按学生分别保存在当前浏览器；老师发放的奖励保存在服务器。设备练习分不跨设备同步，清除浏览器数据会清除设备练习分。{{ student.reward_name }}不自动改变老师记录的学习进度。</p></div></details>
+  <p class="learner-save-warning" data-learner-storage-warning role="status" hidden></p>
+  <noscript><p>请开启 JavaScript 后累计 {{ student.reward_name }}。</p></noscript>
+</section>

@@ -1,0 +1,10 @@
+{% load static %}
+<dialog class="learner-dialog" data-learner-dialog aria-labelledby="learner-congrats-title" aria-describedby="learner-congrats-task">
+  <div class="learner-confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="learner-reward-mascot"><svg aria-hidden="true"><use href="{% static 'courses/characters.svg' %}#golden"/></svg><span aria-hidden="true">✦</span></div>
+  <span class="learner-eyebrow">ONE MORE LITTLE WIN</span><h2 id="learner-congrats-title">做到了，{{ student.name }}！</h2>
+  <p id="learner-congrats-task" data-learner-reward-title>又完成了一个小任务</p>
+  <div class="learner-reward-number"><span>+</span><b data-learner-gain>10</b><small>{{ student.reward_name }}</small></div>
+  <p class="learner-reward-total">今日累计 <strong data-learner-reward-total>10</strong> 点 <span data-learner-reward-message>，能量正在增长。</span></p>
+  <form method="dialog"><button class="button primary" autofocus>太棒了，继续！ <span aria-hidden="true">→</span></button></form>
+</dialog>

@@ -1,0 +1,10 @@
+<article class="panel resource-block" id="block-{{ block.pk }}">
+<span class="eyebrow">{{ block.get_kind_display }}</span><h2>{{ block.title }}</h2>
+{% if block.kind == 'video' %}<video controls playsinline preload="none" aria-label="{{ block.title }}" data-learner-video="video:resource-{{ block.pk }}" src="{{ student_prefix }}{% url 'resource_stream' block.pk %}"></video><span class="learner-video-reward" data-learner-video-status="video:resource-{{ block.pk }}"></span>
+{% elif block.kind == 'audio' %}<audio controls preload="none" aria-label="{{ block.title }}" src="{{ student_prefix }}{% url 'resource_stream' block.pk %}"></audio>
+{% elif block.kind == 'image' %}<img loading="lazy" src="{{ student_prefix }}{% url 'resource_stream' block.pk %}" alt="{{ block.title }}">
+{% elif block.kind == 'document' %}<a class="button secondary" href="{{ student_prefix }}{% url 'resource_stream' block.pk %}" target="_blank" rel="noopener">打开 PDF 文档 ↗</a>
+{% elif block.kind == 'quiz' %}<div data-official-quiz data-answer="{{ block.answer_index }}"><h3>{{ block.question }}</h3><fieldset><legend>选一个答案</legend>{% for option in block.options %}<label class="official-option"><input type="radio" name="block-{{ block.pk }}" value="{{ forloop.counter0 }}"><span>{{ option }}</span></label>{% endfor %}</fieldset><button type="button" class="button secondary" data-check-answer>核对答案</button><p data-official-feedback role="status" aria-live="polite"></p><details class="official-explanation" hidden><summary>看看老师的解释</summary><p>{{ block.explanation }}</p></details></div>{% endif %}
+{% if block.text %}<div class="resource-text">{{ block.text|linebreaks }}</div>{% endif %}
+{% if block.kind == 'dialogue' %}<button class="button secondary" type="button" data-learner-dialogue="dialogue:block-{{ block.pk }}" data-learner-title="完成了：{{ block.title }}">这轮对话完成了 · +{{ student.dialogue_points }}</button>{% endif %}
+</article>
