@@ -5,8 +5,9 @@ This repository includes `deploy/coolify.compose.yml` for a Coolify Docker Compo
 Configure these resource variables in Coolify:
 
 - `ENGLISH_PLATFORM_ENV_FILE`: the absolute path to the existing app's protected `.env` file on the target server. This keeps its Django secret in place rather than copying it into the Coolify UI.
-- `ENGLISH_PLATFORM_STORAGE`: an absolute persistent-data directory on the target server. Back up the SQLite database and media before changing this path.
 - `BUILD_PIP_INDEX_URL`: optional package index; defaults to PyPI.
+
+Create the external Docker volume `english-platform-data` before the first deployment and restore the backed-up `db.sqlite3`, `media/`, and `static/` into it. The external volume is intentionally named so Coolify deployments can replace containers without replacing the data. Relative Nginx configuration files come from the repository, so enable **Preserve repository during deployment**.
 
 The existing env file supplies `SECRET_KEY`, `DEBUG`, and `ALLOWED_HOSTS`; add `CSRF_TRUSTED_ORIGINS` there only if the deployment needs cross-origin administrative requests.
 
