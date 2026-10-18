@@ -5,11 +5,9 @@ services:
       args:
         PIP_INDEX_URL: ${BUILD_PIP_INDEX_URL:-https://pypi.org/simple}
     restart: unless-stopped
+    env_file:
+      - ${ENGLISH_PLATFORM_ENV_FILE:?Set the path to the existing application env file}
     environment:
-      SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in the Coolify resource}
-      DEBUG: ${DEBUG:-false}
-      ALLOWED_HOSTS: ${ALLOWED_HOSTS:?Set ALLOWED_HOSTS in the Coolify resource}
-      CSRF_TRUSTED_ORIGINS: ${CSRF_TRUSTED_ORIGINS:-}
       DATABASE_PATH: /data/db.sqlite3
       MEDIA_ROOT: /data/media
       STATIC_ROOT: /data/static

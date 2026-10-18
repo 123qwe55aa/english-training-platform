@@ -4,12 +4,11 @@ This repository includes `deploy/coolify.compose.yml` for a Coolify Docker Compo
 
 Configure these resource variables in Coolify:
 
-- `SECRET_KEY`: the Django secret, stored only in the Coolify resource settings.
-- `DEBUG`: `false` in production.
-- `ALLOWED_HOSTS`: the deployed hostname and any required local hostnames.
-- `CSRF_TRUSTED_ORIGINS`: optional comma-separated trusted HTTPS origins, if the deployment needs cross-origin administrative requests.
+- `ENGLISH_PLATFORM_ENV_FILE`: the absolute path to the existing app's protected `.env` file on the target server. This keeps its Django secret in place rather than copying it into the Coolify UI.
 - `ENGLISH_PLATFORM_STORAGE`: an absolute persistent-data directory on the target server. Back up the SQLite database and media before changing this path.
 - `BUILD_PIP_INDEX_URL`: optional package index; defaults to PyPI.
+
+The existing env file supplies `SECRET_KEY`, `DEBUG`, and `ALLOWED_HOSTS`; add `CSRF_TRUSTED_ORIGINS` there only if the deployment needs cross-origin administrative requests.
 
 Select the compose file path `deploy/coolify.compose.yml`. The gateway publishes only `127.0.0.1:8080`; configure the host reverse proxy to pass HTTP traffic to that port. The app, database, and media remain on the target server. Do not add the database or uploaded media to Git.
 
