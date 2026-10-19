@@ -40,12 +40,31 @@ VOA permits reuse of its own Learning English material with attribution: https:/
 
 Only allowlisted HTTPS source/media hosts are fetched, including redirect targets. Downloads have timeouts, three attempts, size limits and atomic final writes. Per-file checksums are verified on import. Backups include all imported media and detect missing DB-referenced VOA assets.
 
-## Offline import from an archive
+## Live import into Coolify
 
-Keep the downloaded source archive outside Git and the application storage directory. Mount it read-only or as a temporary import volume; it should stay outside the Docker build context. For example:
+The public site runs in the Coolify app container on `fedora@10.144.144.5`, identified by application UUID `hy8qh7tcaxb6lqtofb7jn7vc`. Do not import through the legacy Compose checkout; it has a separate database. The live container mounts `/data` persistently and uses `/data/media` for protected course assets.
+
+Archive the exact configured lesson URLs returned by `materials.get` or `courses.list` without importing into a local database:
 
 ```sh
-docker compose run --rm -v /path/to/voa-course-archive:/archive:ro app python manage.py import_voa --start 1 --end 12 --archive /archive --document /data/VOA-Lesson-1-12.md --offline --publish
+.venv/bin/python - <<'PY'
+from courses.voa import archive_lesson
+archive_lesson(13, 'https://learningenglish.voanews.com/a/lets-learn-english-lesson-13-happy-birthday-william-shakespeare/3312239.html', '/tmp/voa-live-archive')
+archive_lesson(14, 'https://learningenglish.voanews.com/a/lets-learn-english-lesson-14-how-about-this/3323771.html', '/tmp/voa-live-archive')
+PY
+tar -czf /tmp/voa-live-archive.tar.gz -C /tmp/voa-live-archive .
+scp /tmp/voa-live-archive.tar.gz fedora@10.144.144.5:/tmp/voa-live-archive.tar.gz
 ```
 
-Remove `--offline` to fetch missing assets or newly configured lessons. Raw cached pages are reused. Keep the source archive manifest to detect cache corruption. The published media is stored by content SHA-256; superseded files are retained for recovery and are not linked by the new version. Normal site backups include DB-referenced published media as well as retained media files.
+On the home host, extract the archive, copy it into the unique live app container, and run the checksum-verifying importer:
+
+```sh
+ssh fedora@10.144.144.5
+container=$(docker ps --filter label=coolify.applicationUuid=hy8qh7tcaxb6lqtofb7jn7vc --filter label=com.docker.compose.service=app --format '{{.Names}}')
+mkdir -p /tmp/voa-live-archive && tar -xzf /tmp/voa-live-archive.tar.gz -C /tmp/voa-live-archive
+docker cp /tmp/voa-live-archive "$container":/tmp/voa-live-archive
+docker exec --user 0:0 "$container" chown -R 10001:10001 /tmp/voa-live-archive
+docker exec "$container" python manage.py import_voa --start 13 --end 14 --archive /tmp/voa-live-archive --offline --publish --document /data/VOA-Lesson-13-14.md
+```
+
+Use the actual lesson range and source URLs for each import. The command verifies that each archive matches the configured source URL and checks every media checksum and type. It updates lesson materials only, not session completion, mastery, rewards, or teacher reflection. Read the resulting `materials.get` record and verify the student page and protected media streams. Remove the temporary archive from the host and app container after verification; retain `/data/VOA-Lesson-*.md` when a consolidated text document is useful.

@@ -47,6 +47,14 @@ class MaterialTests(TestCase):
         self.assertContains(r,'Where?')
         self.assertNotContains(r,'<script>alert(1)</script>')
 
+    def test_voa_bundle_does_not_repeat_generic_video_blocks(self):
+        from courses.models import ContentBlock
+        block=ContentBlock.objects.create(lesson=self.lesson,kind='video',title='Duplicate video',order=1,published=True)
+        response=self.client.get(f'/materials/{self.lesson.pk}/')
+        self.assertContains(response,f'/materials/{self.lesson.pk}/media/main/')
+        self.assertNotContains(response,'Duplicate video')
+        self.assertNotContains(response,f'/resources/{block.pk}/stream/')
+
     def test_unpublishing_course_or_material_revokes_both_routes(self):
         urls=[f'/materials/{self.lesson.pk}/',f'/materials/{self.lesson.pk}/media/main/']
         self.assertEqual(self.client.get(urls[1])['X-Accel-Redirect'],'/_protected_media/voa/lesson-01/test.mp4')

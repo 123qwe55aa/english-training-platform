@@ -76,6 +76,8 @@ def material_detail(request, pk, student_slug=None):
     lesson=get_object_or_404(Lesson,pk=pk,published=True,course__in=student_courses(student))
     material=LessonMaterial.objects.filter(lesson=lesson,published=True).first()
     blocks=lesson.blocks.filter(published=True)
+    if material:
+        blocks=blocks.exclude(kind='video')
     if not material and not blocks.exists() and LessonMaterial.objects.filter(lesson=lesson).exists():
         from django.http import Http404
         raise Http404
