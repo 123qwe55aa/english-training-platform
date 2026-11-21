@@ -20,6 +20,13 @@ services:
       STATIC_ROOT: /data/static
     volumes:
       - english-platform-data:/data
+      - /data/english-private-overlays/courses/admin.py:/app/courses/admin.py:ro
+      - /data/english-private-overlays/courses/exams.py:/app/courses/exams.py:ro
+      - /data/english-private-overlays/courses/urls.py:/app/courses/urls.py:ro
+      - /data/english-private-overlays/courses/voa.py:/app/courses/voa.py:ro
+      - /data/english-private-overlays/courses/templates/courses/base.html:/app/courses/templates/courses/base.html:ro
+      - /data/english-private-overlays/courses/templates/courses/exams.html:/app/courses/templates/courses/exams.html:ro
+      - /data/english-private-overlays/courses/templates/admin/english_index.html:/app/courses/templates/admin/english_index.html:ro
     healthcheck:
       test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/')"]
       interval: 30s
